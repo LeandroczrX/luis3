@@ -8,6 +8,11 @@
     margin-top: 20px;
 }
 
+.header ul li{
+    display: flex;
+    align-items: center;
+}
+
 .header ul li a{
     color: white;
     text-decoration: none;

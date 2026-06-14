@@ -1,0 +1,246 @@
+.header-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../imagens-videos/banner.png');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+body{
+    background-color: rgb(26, 24, 24);
+    font-family: Arial;
+    margin: 0;
+    cursor: url(https://www.rw-designer.com/cursor-view/93244.png), auto;
+}
+
+.menu{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 60px;
+}
+
+.menu h3 {
+    display: inline-block; 
+    margin: 0 30px; 
+}
+
+
+.menu h3 a {
+    color: rgb(218, 218, 218); 
+    text-decoration: none;    
+}
+.sobre{
+    margin-top: 80px;
+    text-align: center;
+    color: rgb(219, 219, 219);
+}
+
+.titulo{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    color: rgb(207, 207, 207);
+}
+
+.titulo h1{
+    font-size: 50px;
+}
+
+.texto{
+    width: 40%;
+    display: inline-block;
+    text-align: left;
+    color: rgb(196, 196, 196);
+}
+
+.texto p{
+    font-size: 20px;
+}
+
+.entradas{
+    text-align: center;
+    margin-top: 100px;
+    color: rgb(219, 219, 219); 
+}
+.card{
+    background-color: beige;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 20px;
+    vertical-align: top;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 17px rgba(0, 0, 0, 0.2);
+    
+     
+    
+}
+
+.card img{
+    width: 180px;
+    height: 120px;
+    border-radius: 10px;
+
+}
+
+.card:hover{
+    transform: translateY(-15px);
+    background-image: url(https://i.pinimg.com/originals/83/bc/0e/83bc0efb04998ca9dba60d506dafd488.jpg);
+    color: #ffffff;
+    
+}
+
+.lanches{
+    text-align: center;
+    margin-top: 80px;
+    color: rgb(219, 219, 219);  
+    
+}
+.preço{
+    color: #000000;
+    font-weight: bold;
+}
+
+.Descricao{
+padding: 20px;
+color: black, bold;
+
+}
+
+.instagram{
+    background-color: rgb(26, 24, 24);
+    text-align: center;
+    padding: 20px;
+    margin-top: 80px;
+    color: rgb(223, 223, 223);
+}
+
+
+.feedback-container {
+    background-color: rgb(17, 16, 16); 
+    text-align: center;
+    padding: 20px;
+}
+
+.feedback-texto {
+    color: rgb(219, 219, 219);
+    font-size: 16px;
+    margin: 0;
+}
+
+.site-footer {
+    background-color: rgb(0, 0, 0); 
+    text-align: center; 
+    padding: 25px 20px;
+}
+
+.site-footer p {
+    color: rgb(235, 235, 235);
+    font-size: 14px;
+    margin: 0;
+    display: inline-block; 
+}
+
+.caixa-colabo p{
+    color: rgb(0, 0, 0);
+
+
+}
+
+.caixa-colabo h1{
+    color: rgb(3, 3, 3);
+}
+
+#container{
+     display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100vh; 
+  box-shadow: 0 0 15px rgba(255,49,49,.2);
+}
+.caixa-colabo{
+     background-color: beige;
+    width: 200px;
+    padding: 40px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 20px;
+    vertical-align: top;
+    
+}
+
+.textog{
+    color: #FFFFFF;
+
+}
+.card-video {
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-video video {
+    width: 180px; /* diminua aqui se quiser menor */
+    height: auto;
+    border-radius: 10px;
+}
+
+.pelucias img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    
+}
+
+.pelucias {
+    margin: 5px 0;
+    font-size: 12px;
+    
+}
+
+.pelucias img:hover {
+    transform: scale(1.1);
+    border: 2px solid #df4040;
+   
+}
+
+.pelucias img.selecionada {
+    border: 2px solid #ffffff;
+}
+
+.carrinho{
+    background-image: url(https://i.pinimg.com/originals/83/bc/0e/83bc0efb04998ca9dba60d506dafd488.jpg);
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carrinho h2,
+.carrinho h3{
+    color: rgb(255, 255, 255);
+    font-weight: bold
+}
+
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Grease Food - Cardápio</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header-container">
+        <div class="header">
+            <img src="./imagens-videos/grease.jpeg" alt="Logo Grease Food" class="logo">
+            <h1>Grease Food</h1>
+            <p class="address">De Saudável a Risco de Obito</p>
+            <a href="equipe.html" class="btn-equipes">Ver nossa Equipe</a>
+        </div>
+    </header>
+
+
+    <div class="lanches">
+        <h1>Nossos Lanches</h1>
+
+        <div class="card">
+            <h2>X-Magrinho</h2>
+            <img src="./imagens-videos/xmagrinho.jpeg" alt="X-Magrinho">
+            <p class="Descricao">Para quem quer fingir que está na dieta. </p>
+            <span class="preço">R$ 30,00</span>
+            <button onclick="adicionarAoCarrinho(1)">Adicionar</button>
+        </div>
+
+        <div class="card">
+            <h2>Fat-Fit</h2>
+            <img src="./imagens-videos/fatfit.jpeg" alt="Fat-Fit">
+            <p class="Descricao">Nem muito gordo, nem muito fitness.</p>
+            <span class="preço">R$ 32,00</span>
+                  <button onclick="adicionarAoCarrinho(2)">Adicionar</button>
+        </div>
+
+        <div class="card">
+            <h2>X-Infarto</h2>
+            <img src="./imagens-videos/xinfarto.jpeg" alt="X-Infarto">
+        <p class="Descricao">O Causador de infartos !!!</p>    
+                <span class="preço">R$ 43,00</span>
+            <button onclick="adicionarAoCarrinho(3)">Adicionar</button>
+        </div>
+
+        <br>
+
+        <div class="card">
+            <h2>X-Caloria</h2>
+            <img src="./imagens-videos/xcaloria.jpeg" alt="X-Caloria">
+            <p class="Descricao">De magrinho para a obesidade!</p>
+            <span class="preço">R$ 36,00</span>
+                  <button onclick="adicionarAoCarrinho(4)">Adicionar</button>
+        </div>
+
+        <div class="card">
+            <h2>X-Cebola</h2>
+            <img src="./imagens-videos/xcebola.jpeg" alt="X-Cebola">
+            <p class="Descricao">Para os que amam de cebola.</p>
+            <span class="preço">R$ 28,00</span>
+                  <button onclick="adicionarAoCarrinho(5)">Adicionar</button>
+        </div>
+    
+
+        <div class="card">
+            <h2>X-Gordinho</h2>
+            <img src="./imagens-videos/xgordinho.jpeg" alt="X-Gordinho">
+            <p class="Descricao">Escolha sua pelúcia com OBESIDADE!:</p>
+            <span class="preço">R$ 35,00</span>
+            <button onclick="adicionarAoCarrinho(6)">Adicionar</button>
+            <div class="Pelucia-escolher">
+            <label></label>
+
+            <div class="pelucias">
+    <img src="./imagens-videos/Cartman.png" alt="Cartman"
+         data-som="./imagens-videos/somcartman.mp3">
+
+    <img src="./imagens-videos/Patrick.png" alt="Patrick"
+         data-som="./imagens-videos/i-love-you_2.mp3">
+
+    <img src="./imagens-videos/Sonic.png" alt="Sonic"
+         data-som="./imagens-videos/sonic-ring-sound2.mp3">      
+</div>
+<audio id="audioPelucia"></audio>
+                  
+        </div>
+        </div>
+
+        
+
+    <div class="entradas">
+        
+        <h1>Porções</h1>
+
+        <div class="card">
+            <h2>Nuggets Fritos</h2>
+            <img src="./imagens-videos/nuggets.jfif" alt="nuggets">
+            <p class="Descricao">Nuggets crocantes + Molho barbecue</p>
+            <span class="preço">R$ 24,00</span>
+             <button onclick="adicionarAoCarrinho(7)">Adicionar</button>
+        </div>
+
+        <div class="card">
+            <h2>Batata + Cheddar</h2>
+            <img src="./imagens-videos/batatachedar.jpeg" alt="Batata Cheddar e Bacon">
+            <p class="Descricao">Porção de batatas fritas artesanais</p>
+            <span class="preço">R$ 22,00</span>
+             <button onclick="adicionarAoCarrinho(8)">Adicionar</button>
+             
+        </div>
+
+        <div class="card">
+            <h2>Anéis de Cebola</h2>
+            <img src="./imagens-videos/cebola.jpeg" alt="Anéis de Cebola">
+            <p class="Descricao">Anéis de cebola fritos na hora. </p>
+            <span class="preço">R$ 20,00</span>
+                  <button onclick="adicionarAoCarrinho(9)">Adicionar</button>
+        </div>
+    </div>
+
+    <div class="carrinho">
+    <h2>Seus Pedidos</h2>
+
+    <div id="lista-carrinho"></div>
+
+    <h3 id="total">Total: R$ 0</h3>
+
+    <button id="limpar">Limpar Carrinho</button>
+    <button id="comprar">Finalizar Pedido</button>
+
+    <p id="texto-comprar"></p>
+</div>
+
+     <div class="feedback-container">
+    <h1 class="textog">Olha so o feedback da Nutri Gigi</h1>
+
+    <div class="card-video">
+        <video controls>
+            <source src="./imagens-videos/video_gigi.mp4" type="video/mp4">
+            
+        </video>
+    </div>
+</div>
+
+    <footer class="site-footer">
+        <div class="footer-direitos">
+            <p>© Direitos reservados a Grease Lanches</p>
+        </div>
+        <div class="footer-contato">
+            <p class="email">greaselanches@gmail.com</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+<audio id="somCarrinho">
+    <source src="./imagens-videos/dinheiro.mp3" type="audio/mp3">
+    <audio id="somCompra">
+    <source src="./imagens-videos/realizada.mp3" type="audio/mp3">
+
+</audio>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,92 @@
+
+body {
+    background: #111;
+    cursor: url(https://www.rw-designer.com/cursor-view/69486.png), auto;
+}
+
+.titulo-equipe {
+    text-align: center;
+    font-size: 42px;
+    margin-top: 50px;
+}
+
+.subtitulo-equipe {
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.equipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 60px 20px;
+}
+
+.card-membro {
+    width: 250px;
+    background: #1b1b1b;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(255,49,49,.2);
+}
+
+.card-membro:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(255, 242, 61, 0.9);
+}
+
+.card-membro img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #000000;
+    margin-bottom: 15px;
+}
+
+.card-membro h3 {
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.card-membro span {
+    color: #FFD700;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.card-membro p {
+    color: #ddd;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.btn-inicio {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background-color: #54CC0A;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-inicio img {
+    width: 24px;
+    height: 24px;
+}
+
+.btn-inicio:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
